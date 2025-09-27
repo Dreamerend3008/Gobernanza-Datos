@@ -1,0 +1,22 @@
+id,titulo,genero,plataforma,fecha_lanzamiento,puntuacion,desarrollador,precio_usd,multiplataforma,metascore
+1,The Legend Of Zelda,Aventura,Switch,2017-03-03,9.5,Nintendo,59.99,True,97.0
+2,God Of War,Acción,PS4,2018-04-20,9.8,Santa Monica,39.99,True,94.0
+5,Minecraft,Sandbox,PS4,,9.0,Mojang,26.95,True,93.0
+7,Fortnite,Battle royale,Multi,2017-07-25,8.0,Epic Games,0.0,True,78.0
+8,Gta V,Acción,PS4,2013-09-17,10.0,Rockstar,29.99,True,97.0
+10,Animal Crossing,Simulación,Switch,2020-03-20,8.5,Nintendo,49.99,True,90.0
+11,The Last Of Us,"Acción, aventura",PS4,2020-06-19,8.5,Naughty Dog,49.99,True,93.0
+13,Among Us,Party game,Mobile,2018-06-15,7.5,Innersloth,0.0,True,85.0
+14,Red Dead Redemption 2,Aventura,PS4,2018-10-26,9.5,Rockstar Games,59.99,True,97.0
+15,Call Of Duty,Fps,Multiplatform,2020-03-10,8.0,Infinity Ward,0.0,True,79.0
+16,Overwatch 2,Shooter,PC,2022-10-04,6.5,Blizzard Entertainment,49.99,True,68.0
+17,Elden Ring,Rpg,PS5,2022-02-25,9.5,Fromsoftware,59.99,True,96.0
+19,Fifa 23,Football,PS5,2022-09-30,8.0,Ea Vancouver,59.99,True,76.0
+20,Cyberpunk 2077,Rpg,PC,2020-12-10,7.0,Cd Projekt Red,29.99,True,76.0
+28,Grand Theft Auto V,Acción-aventura,PS4,2013-09-17,10.0,Rockstar North,29.99,True,97.0
+31,The Last Of Us Part Ii,"Acción, aventura",PS4,2020-06-19,8.5,Naughty Dog,49.99,True,93.0
+34,Red Dead Redemption Ii,Aventura,PS4,2018-10-26,9.5,Rockstar Games,59.99,True,97.0
+35,Call Of Duty: Warzone,Fps,Multi,2020-03-10,8.0,Infinity Ward,0.0,True,79.0
+36,Overwatch,Shooter,PC,2022-10-04,6.5,Blizzard Entertainment,49.99,True,68.0
+42,The Legend Of Zelda: Botw,Aventura,Switch,2017-03-03,9.5,Nintendo,59.99,True,97.0
+50,Animal Crossing: Nh,Simulación,Switch,2020-03-20,8.5,Nintendo,49.99,True,90.0
