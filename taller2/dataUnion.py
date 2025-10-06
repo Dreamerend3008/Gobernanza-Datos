@@ -1,7 +1,7 @@
 import pandas as pd
 
-files_path = [f'data/ConjuntoDatos_MedidoresAgua/ConjuntoDatos_{i}_{i*50}.txt' for i in range(1, 11)]
-final_file_path = 'data/data.csv'
+files_path = [f'datasets/ConjuntoDatos_MedidoresAgua/ConjuntoDatos_{i}_{i*50}.txt' for i in range(1, 11)]
+final_file_path = 'datasets/data.csv'
 
 # df[0] porque unicamente este tiene los headers
 df = [] 
