@@ -1,0 +1,332 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Data Quality Dashboard</title>
+        <style>
+            body { font-family: 'Segoe UI', Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+            .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+            .header { text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; margin-bottom: 30px; }
+            .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0; }
+            .metric-card { background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #667eea; }
+            .metric-value { font-size: 2em; font-weight: bold; color: #333; }
+            .metric-label { color: #666; font-size: 0.9em; }
+            .section { margin: 30px 0; }
+            .section h2 { color: #333; border-bottom: 2px solid #667eea; padding-bottom: 10px; }
+            table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+            th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+            th { background-color: #667eea; color: white; }
+            .good { color: #28a745; font-weight: bold; }
+            .warning { color: #ffc107; font-weight: bold; }
+            .bad { color: #dc3545; font-weight: bold; }
+            .progress-bar { background: #e9ecef; height: 20px; border-radius: 10px; overflow: hidden; }
+            .progress-fill { height: 100%; background: linear-gradient(90deg, #28a745, #ffc107, #dc3545); }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>🔍 Data Quality Dashboard</h1>
+                <p>Generated: 2025-10-10 22:00:46</p>
+                <p>Dataset: Water Meter Data Quality Report</p>
+            </div>
+
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="metric-value">501</div>
+                    <div class="metric-label">Total Rows</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">14</div>
+                    <div class="metric-label">Total Columns</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">4</div>
+                    <div class="metric-label">Numeric Columns</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">0.2 MB</div>
+                    <div class="metric-label">Memory Usage</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📊 Missing Values Analysis</h2>
+                <table>
+                    <tr><th>Column</th><th>Missing Count</th><th>Missing %</th><th>Status</th></tr>
+    
+                    <tr>
+                        <td>No</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Water Meter ID</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading ID</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading Value</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading Date</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Previous Reading Value</td>
+                        <td>7</td>
+                        <td>1.4%</td>
+                        <td><span class="warning">⚠️ Minor Issues</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Previous Reading Date</td>
+                        <td>13</td>
+                        <td>2.6%</td>
+                        <td><span class="warning">⚠️ Minor Issues</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading Frequency</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reader ID</td>
+                        <td>2</td>
+                        <td>0.4%</td>
+                        <td><span class="warning">⚠️ Minor Issues</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Type of Contract</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading Validity</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Certification on the ERP</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Final Billing</td>
+                        <td>0</td>
+                        <td>0.0%</td>
+                        <td><span class="good">✅ Perfect</span></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reason for Reading</td>
+                        <td>23</td>
+                        <td>4.6%</td>
+                        <td><span class="warning">⚠️ Minor Issues</span></td>
+                    </tr>
+        
+                </table>
+            </div>
+
+            <div class="section">
+                <h2>🔧 Data Types Overview</h2>
+                <table>
+                    <tr><th>Column</th><th>Data Type</th><th>Unique Values</th><th>Sample Values</th></tr>
+    
+                    <tr>
+                        <td>No</td>
+                        <td>int64</td>
+                        <td>500</td>
+                        <td>1, 2, 3...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Water Meter ID</td>
+                        <td>object</td>
+                        <td>496</td>
+                        <td>IT-WM-001, IT-WM-002, IT-WM-003...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading ID</td>
+                        <td>object</td>
+                        <td>500</td>
+                        <td>READ-001, READ-002, READ-003...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading Value</td>
+                        <td>float64</td>
+                        <td>30</td>
+                        <td>145.5, 89.75, 456.78...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading Date</td>
+                        <td>object</td>
+                        <td>296</td>
+                        <td>2024-01-15, 2024-01-16, 2024-01-17...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Previous Reading Value</td>
+                        <td>float64</td>
+                        <td>49</td>
+                        <td>120.3, 75.2, 210.45...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Previous Reading Date</td>
+                        <td>object</td>
+                        <td>289</td>
+                        <td>2023-12-15, 2023-12-16, 2023-12-17...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading Frequency</td>
+                        <td>object</td>
+                        <td>2</td>
+                        <td>monthly, bimonthly...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reader ID</td>
+                        <td>object</td>
+                        <td>15</td>
+                        <td>READER-01, READER-02, READER-03...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Type of Contract</td>
+                        <td>object</td>
+                        <td>3</td>
+                        <td>residential, industrial, comercial...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reading Validity</td>
+                        <td>bool</td>
+                        <td>2</td>
+                        <td>True, False...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Certification on the ERP</td>
+                        <td>bool</td>
+                        <td>2</td>
+                        <td>True, False...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Final Billing</td>
+                        <td>float64</td>
+                        <td>33</td>
+                        <td>125.4, 89.75, 0.0...</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Reason for Reading</td>
+                        <td>object</td>
+                        <td>60</td>
+                        <td>Routine, Missing, First Reading...</td>
+                    </tr>
+        
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>📈 Numeric Columns Summary</h2>
+            <table>
+                <tr><th>Column</th><th>Mean</th><th>Std</th><th>Min</th><th>Max</th><th>Outliers</th></tr>
+        
+                        <tr>
+                            <td>No</td>
+                            <td>250.50</td>
+                            <td>144.34</td>
+                            <td>1.00</td>
+                            <td>500.00</td>
+                            <td>0</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Reading Value</td>
+                            <td>450.83</td>
+                            <td>308.93</td>
+                            <td>0.00</td>
+                            <td>1000.00</td>
+                            <td>0</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Previous Reading Value</td>
+                            <td>425.73</td>
+                            <td>290.93</td>
+                            <td>0.00</td>
+                            <td>1000.00</td>
+                            <td>0</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Final Billing</td>
+                            <td>380.24</td>
+                            <td>294.29</td>
+                            <td>0.00</td>
+                            <td>901.23</td>
+                            <td>0</td>
+                        </tr>
+            
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Data Quality Score</h2>
+            <div style="text-align: center; margin: 30px 0;">
+                <div style="font-size: 3em; font-weight: bold; color: #667eea;">99.4/100</div>
+                <div class="progress-bar" style="margin: 20px auto; width: 300px;">
+                    <div class="progress-fill" style="width: 99.35842600513259%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💡 Recommendations</h2>
+            <ul>
+                <li>✅ Excellent data quality!</li>
+                <li>Monitor columns with high missing value percentages</li>
+                <li>Consider data validation rules for future data ingestion</li>
+                <li>Regular data quality monitoring recommended</li>
+            </ul>
+        </div>
+
+        </div>
+    </body>
+    </html>
+    
