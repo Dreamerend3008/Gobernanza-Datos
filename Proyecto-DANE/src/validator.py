@@ -8,7 +8,8 @@ produccion = ["VENTA", "BRUTA", "CONSUI", "AGREGA", "CTO", "CTOINS"]
 
 expenses_op = ["GAS","EMPAQUE","HONORA","COMISION","ARRIENDO","SEGURO",
              "ASEO","ENERGIA","COMUNICA","PUBLICO","FLETES","PUBLICI",
-             "ADECUA","REGALA","OUTSOURCING","OTROS","GASTOS"]
+             "ADECUA","REGALA","OUTSOURCING","OTROS"]
+general_expenses = ['GASTOS','GASTOSNOP','GASTOPNOP']
 # produccion
 def rule_nuls(df: pd.DataFrame) -> dict:
     nuls = df[produccion+expenses_op].isnull()
@@ -61,7 +62,7 @@ def rule_margen_val_agregado(df: pd.DataFrame):
     }
 # expenses_op
 def rule_consistencial_total(df: pd.DataFrame):
-    invalid = df['GASTOS'] != df[expenses_op[:-1]].sum(axis=1)
+    invalid = df['GASTOS'] != df[expenses_op].sum()
     return{
         'cantidad': invalid.sum(),
         'filas': df[invalid],
@@ -75,7 +76,7 @@ def rule_proporcion_ventas(df: pd.DataFrame):
         'porcentaje': (invalid).mean()*100
     }
 def rule_peso_relativo_gastos(df: pd.DataFrame):
-    invalid = (df[expenses_op[:-1]].div(df['GASTOS'], axis=0) > 0.5).any(axis=1)
+    invalid = (df[expenses_op].div(df['GASTOS'], axis=0) > 0.5).any(axis=1)
     return{
         'cantidad': invalid.sum(),
         'filas': df[invalid],
