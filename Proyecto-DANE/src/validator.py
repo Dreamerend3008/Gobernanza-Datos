@@ -33,7 +33,7 @@ def rule_produccion_consumo(df: pd.DataFrame):
         'porcentaje': invalid.mean()*100
     }
 def rule_val_agregado(df: pd.DataFrame):
-    invalid = (df['AGREGA'] != df['BRUTA'] - df['CONSUI'])
+    invalid = (df['AGREGA'] < df['BRUTA'] - df['CONSUI'])
     return{
         'cantidad': invalid.sum(),
         'filas': df[invalid],
