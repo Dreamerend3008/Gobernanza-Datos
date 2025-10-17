@@ -1,0 +1,64 @@
+category,rule,description,violations_count,total_records,violation_percentage,valid_percentage
+identification,ID_NULLS,Identificador único no debe ser nulo,0,0,0.0,100.0
+identification,ID_DUPLICATES,Identificador único no debe estar duplicado,0,0,0.0,100.0
+identification,INVALID_CORRELA,Código CORRELA_16 debe coincidir con valores válidos del catálogo CIIU,0,0,0.0,100.0
+identification,INVALID_YEAR,Año de inicio debe estar entre 1900 y 2022,3,6,0.030048076923076924,99.96995192307693
+identification,NULL_LEGAL_ORG,Organización jurídica no debe ser nula,6,12,0.06009615384615385,99.93990384615384
+production_sales,VENTA_NEGATIVE,VENTA no debe ser negativo,0,0,0.0,100.0
+production_sales,BRUTA_NEGATIVE,BRUTA no debe ser negativo,15,30,0.15024038461538464,99.84975961538461
+production_sales,CONSUI_NEGATIVE,CONSUI no debe ser negativo,0,0,0.0,100.0
+production_sales,CIMREP_NEGATIVE,CIMREP no debe ser negativo,0,0,0.0,100.0
+production_sales,CTO_NEGATIVE,CTO no debe ser negativo,0,0,0.0,100.0
+production_sales,CTOINS_NEGATIVE,CTOINS no debe ser negativo,0,0,0.0,100.0
+production_sales,AGREGA_FORMULA,AGREGA debe ser aproximadamente igual a BRUTA - CONSUI,0,0,0.0,100.0
+production_sales,CONSUI_EXCEEDS_BRUTA,Consumo intermedio no debe exceder producción bruta,81,162,0.811298076923077,99.18870192307693
+production_sales,CTO_EXCEEDS_VENTA,Costo de mercancía no debe exceder ventas,15,30,0.15024038461538464,99.84975961538461
+production_sales,CTOINS_LESS_CTO,Costo total debe ser mayor o igual al costo de mercancía,0,0,0.0,100.0
+operational_expenses,GAS_NEGATIVE,Gasto GAS no debe ser negativo,0,0,0.0,100.0
+operational_expenses,EMPAQUE_NEGATIVE,Gasto EMPAQUE no debe ser negativo,0,0,0.0,100.0
+operational_expenses,HONORA_NEGATIVE,Gasto HONORA no debe ser negativo,0,0,0.0,100.0
+operational_expenses,COMISION_NEGATIVE,Gasto COMISION no debe ser negativo,0,0,0.0,100.0
+operational_expenses,ARRIENDO_NEGATIVE,Gasto ARRIENDO no debe ser negativo,0,0,0.0,100.0
+operational_expenses,SEGURO_NEGATIVE,Gasto SEGURO no debe ser negativo,0,0,0.0,100.0
+operational_expenses,ASEO_NEGATIVE,Gasto ASEO no debe ser negativo,0,0,0.0,100.0
+operational_expenses,ENERGIA_NEGATIVE,Gasto ENERGIA no debe ser negativo,0,0,0.0,100.0
+operational_expenses,COMUNICA_NEGATIVE,Gasto COMUNICA no debe ser negativo,0,0,0.0,100.0
+operational_expenses,PUBLICO_NEGATIVE,Gasto PUBLICO no debe ser negativo,0,0,0.0,100.0
+operational_expenses,FLETES_NEGATIVE,Gasto FLETES no debe ser negativo,0,0,0.0,100.0
+operational_expenses,PUBLICI_NEGATIVE,Gasto PUBLICI no debe ser negativo,0,0,0.0,100.0
+operational_expenses,ADECUA_NEGATIVE,Gasto ADECUA no debe ser negativo,0,0,0.0,100.0
+operational_expenses,REGALA_NEGATIVE,Gasto REGALA no debe ser negativo,0,0,0.0,100.0
+operational_expenses,OUTSOURCING_NEGATIVE,Gasto OUTSOURCING no debe ser negativo,0,0,0.0,100.0
+operational_expenses,OTROS_NEGATIVE,Gasto OTROS no debe ser negativo,0,0,0.0,100.0
+operational_expenses,GASTOS_SUM_INCONSISTENT,GASTOS debe ser mayor o igual a la suma de sus componentes,0,0,0.0,100.0
+non_operational_expenses,VENTASNOP_NEGATIVE,VENTASNOP no debe ser negativo,0,0,0.0,100.0
+non_operational_expenses,GASTOSNOP_NEGATIVE,GASTOSNOP no debe ser negativo,0,0,0.0,100.0
+non_operational_expenses,GASTOPNOP_FORMULA,GASTOPNOP debe ser aproximadamente GASTOS + GASTOSNOP,9467,18934,94.82171474358975,5.178285256410256
+personnel,PERSONNEL_SUM_INCONSISTENT,TOTPERSO debe ser aproximadamente igual a la suma de tipos de personal,9566,19132,95.81330128205127,4.186698717948718
+personnel,GENDER_SUM_INCONSISTENT,TOTMUJ + TOTHOM debe ser igual a TOTPERSO,3,6,0.030048076923076924,99.96995192307693
+personnel,SOCIOS_EXCEEDS_TOTAL,SOCIOS no debe exceder TOTPERSO,0,0,0.0,100.0
+personnel,PERREMUN_NEGATIVE,PERREMUN no debe ser negativo,0,0,0.0,100.0
+personnel,SOCIOS_NEGATIVE,SOCIOS no debe ser negativo,0,0,0.0,100.0
+personnel,PERSONOM_NEGATIVE,PERSONOM no debe ser negativo,0,0,0.0,100.0
+personnel,DIRECTO_NEGATIVE,DIRECTO no debe ser negativo,0,0,0.0,100.0
+personnel,AGENCIA_NEGATIVE,AGENCIA no debe ser negativo,0,0,0.0,100.0
+personnel,APRENDIZ_NEGATIVE,APRENDIZ no debe ser negativo,0,0,0.0,100.0
+personnel,TOTPERSO_NEGATIVE,TOTPERSO no debe ser negativo,0,0,0.0,100.0
+personnel,TOTMUJ_NEGATIVE,TOTMUJ no debe ser negativo,0,0,0.0,100.0
+personnel,TOTHOM_NEGATIVE,TOTHOM no debe ser negativo,0,0,0.0,100.0
+remuneration,SUELDOS_NEGATIVE,SUELDOS no debe ser negativo,0,0,0.0,100.0
+remuneration,PRESTAC_NEGATIVE,PRESTAC no debe ser negativo,0,0,0.0,100.0
+remuneration,SUEPLAN_NEGATIVE,SUEPLAN no debe ser negativo,0,0,0.0,100.0
+remuneration,PREPLAN_NEGATIVE,PREPLAN no debe ser negativo,0,0,0.0,100.0
+remuneration,REMPLAN_NEGATIVE,REMPLAN no debe ser negativo,0,0,0.0,100.0
+remuneration,COTIZA_NEGATIVE,COTIZA no debe ser negativo,0,0,0.0,100.0
+remuneration,GASAGEN_NEGATIVE,GASAGEN no debe ser negativo,0,0,0.0,100.0
+remuneration,REMTEMP_NEGATIVE,REMTEMP no debe ser negativo,0,0,0.0,100.0
+remuneration,TOTREM_NEGATIVE,TOTREM no debe ser negativo,0,0,0.0,100.0
+remuneration,TOTREM_SUM_INCONSISTENT,TOTREM debe ser aproximadamente igual a la suma de componentes de remuneración,6061,12122,60.70713141025641,39.29286858974359
+inventories,INVINI_NEGATIVE,INVINI no debe ser negativo,0,0,0.0,100.0
+inventories,INVFIN_NEGATIVE,INVFIN no debe ser negativo,0,0,0.0,100.0
+inventories,INVPRO_NEGATIVE,INVPRO no debe ser negativo,0,0,0.0,100.0
+inventories,INVPRO_FORMULA,INVPRO debe ser aproximadamente (INVINI + INVFIN) / 2,0,0,0.0,100.0
+inventories,ROTATION_FORMULA,ROTACION debe ser aproximadamente CTO / INVPRO,9538,19076,95.53285256410257,4.467147435897436
+business_indicators,SIZE_PERSONNEL_INCONSISTENT,Tamaño de empresa por ventas inconsistente con número de empleados,7656,15312,76.6826923076923,23.317307692307693
