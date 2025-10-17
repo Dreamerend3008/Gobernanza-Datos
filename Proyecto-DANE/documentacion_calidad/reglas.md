@@ -7,7 +7,7 @@
 | nulos | Valores nulos en columnas de producción o gastos |
 | venta_produccion | BRUTA > VENTA × 1.05 |
 | produccion_consumo | BRUTA < CONSUI |
-| valor_agregado | AGREGA != BRUTA − CONSUI |
+| valor_agregado | AGREGA < BRUTA − CONSUI |
 | costos | CTOINS < CTO |
 | eficiencia | VENTA < CTOINS |
 | margen_val_agregado | AGREGA fuera de rango (0 <= AGREGA <= VENTA) |

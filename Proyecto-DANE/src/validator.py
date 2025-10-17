@@ -4,12 +4,12 @@ from typing import Dict, List, Any, Tuple
 
 # Column groups based on business logic
 
-produccion = ["VENTA", "BRUTA", "CONSUI", "AGREGA", "CTO", "CTOINS"]
+produccion = ["VENTA", "BRUTA", "CONSUI", "AGREGA", "CTO"]
 
 expenses_op = ["GAS","EMPAQUE","HONORA","COMISION","ARRIENDO","SEGURO",
              "ASEO","ENERGIA","COMUNICA","PUBLICO","FLETES","PUBLICI",
              "ADECUA","REGALA","OUTSOURCING","OTROS"]
-general_expenses = ['GASTOS','GASTOSNOP','GASTOPNOP']
+general_expenses = ['GASTOS','GASTOSNOP','GASTOPNOP','CTOINS']
 # produccion
 def rule_nuls(df: pd.DataFrame) -> dict:
     nuls = df[produccion+expenses_op].isnull()
@@ -62,7 +62,7 @@ def rule_margen_val_agregado(df: pd.DataFrame):
     }
 # expenses_op
 def rule_consistencial_total(df: pd.DataFrame):
-    invalid = df['GASTOS'] != df[expenses_op].sum()
+    invalid = df[general_expenses].sum(axis=1) < df[expenses_op].sum(axis=1)
     return{
         'cantidad': invalid.sum(),
         'filas': df[invalid],
