@@ -9,7 +9,7 @@ produccion = ["VENTA", "BRUTA", "CONSUI", "AGREGA", "CTO"]
 expenses_op = ["GAS","EMPAQUE","HONORA","COMISION","ARRIENDO","SEGURO",
              "ASEO","ENERGIA","COMUNICA","PUBLICO","FLETES","PUBLICI",
              "ADECUA","REGALA","OUTSOURCING","OTROS"]
-general_expenses = ['GASTOS','GASTOSNOP','GASTOPNOP','CTOINS']
+general_G = ['GASTOS','GASTOSNOP','GASTOPNOP','CTOINS']
 # produccion
 def rule_nuls(df: pd.DataFrame) -> dict:
     nuls = df[produccion+expenses_op].isnull()
@@ -26,7 +26,7 @@ def rule_venta_produccion(df: pd.DataFrame):
         'porcentaje': invalid.mean()*100
     }
 def rule_produccion_consumo(df: pd.DataFrame):
-    invalid = (df['BRUTA']<df['CONSUI'])
+    invalid = (df['BRUTA'] < df['CONSUI'])
     return{
         'cantidad': invalid.sum(),
         'filas': df[invalid],
@@ -40,7 +40,7 @@ def rule_val_agregado(df: pd.DataFrame):
         'porcentaje': invalid.mean()*100
     }
 def rule_costos(df: pd.DataFrame):
-    invalid = (df['CTOINS']<df['CTO'])
+    invalid = ( df['CTOINS'] < df['CTO'])
     return{
         'cantidad': invalid.sum(),
         'filas': df[invalid],
@@ -62,7 +62,7 @@ def rule_margen_val_agregado(df: pd.DataFrame):
     }
 # expenses_op
 def rule_consistencial_total(df: pd.DataFrame):
-    invalid = df[general_expenses].sum(axis=1) < df[expenses_op].sum(axis=1)
+    invalid = df[general_G].sum(axis=1) < df[expenses_op].sum(axis=1)
     return{
         'cantidad': invalid.sum(),
         'filas': df[invalid],
