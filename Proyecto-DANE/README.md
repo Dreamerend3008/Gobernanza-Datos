@@ -8,8 +8,8 @@ El proyecto desarrolla un validador comprehensivo que aplica reglas de negocio y
 
 ## Linea del tiempo del proyecto
 * Analisis exploratorio incial ``start_eda.ipynb``
-* Creación de funiones validadoras ``**validator.py** ``
-* Creación de simulador de datos ``**simulator.py**``
+* Creación de funiones validadoras ``validator.py ``
+* Creación de simulador de datos ``simulator.py``
 * Analisis de calidad ``analisis_calidad.ipynb``
 
 ## Acerca de la limpieza
