@@ -64,6 +64,12 @@ El archivo `data.csv` contiene 9,984 registros de empresas del sector comercio c
 - `simulated_invalid_Data.csv`: 5,000 registros con tasa de error del 5%
 - `invalidData.csv`: Registros originales que violaron al menos una regla
 
+
+## Documentación escrita de los procedimientos:
+
+* [Documento diagnostico en Word](https://livejaverianaedu-my.sharepoint.com/:w:/g/personal/sofia_mora_javeriana_edu_co/EcEgkVBwuLtAtg204MRTv1oBIeIgBBCDZ-O8nIyV8DdieQ?e=YiRw14)
+* [Diccionario construido para el proyecto](https://livejaverianaedu-my.sharepoint.com/:x:/g/personal/sofia_mora_javeriana_edu_co/ER0du6nP_31MthWXSNCe980BfGQGMChr5qIlQ4bokjmkkg?e=SswcVv)
+
 ## Acceso a los Datos Originales
 
 Los datos utilizados en este proyecto están disponibles en el siguiente enlace:  
